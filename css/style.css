@@ -12,7 +12,6 @@ body{
 }
 
 .container{
-    height: 100vh;
     background-color: black;
 }
 
@@ -23,9 +22,9 @@ body{
     padding-top: 50px;
 }
 
-.top-controls{
-    background-color: rgb(82, 82, 82);
-    border: 1px solid  rgb(82, 82, 82);
+.gray-controls{
+    background-color: rgba(82, 82, 82, 0.459);
+    border: 1px solid  rgba(82, 82, 82, 0.459);
     padding: 5px;
     border-radius: 5px;
 }
@@ -35,9 +34,27 @@ body{
 }
 
 /* regole griglia partecipanti */
+.participants{
+    display: flex;
+    flex-wrap: wrap;
+    /* height: 100vh; */
+    margin: 50px 10px 0 10px;
+}
 
+.card{
+    width: calc(100% / 7);
+    position: relative;
+}
 
-
+.name-participant{
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+}
 
 
 /* regole comandi generali bottom */
+.container-btm{
+    display: flex;
+    justify-content: space-between;
+}
