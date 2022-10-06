@@ -13,23 +13,25 @@ body{
 
 .container{
     background-color: black;
+    height: 100vh;
+    overflow: hidden;
 }
 
 /* regole comandi parte alta */
 .top{
     display: flex;
     justify-content: flex-end;
-    padding-top: 50px;
+    padding: 50px 0;
 }
 
 .gray-controls{
     background-color: rgba(82, 82, 82, 0.459);
     border: 1px solid  rgba(82, 82, 82, 0.459);
-    padding: 5px;
     border-radius: 5px;
+    padding: 5px;
 }
 
-.top-controls.dx{
+.gray-controls.dx{
     margin-left: 5px;
 }
 
@@ -37,13 +39,15 @@ body{
 .participants{
     display: flex;
     flex-wrap: wrap;
-    /* height: 100vh; */
-    margin: 50px 10px 0 10px;
+    margin: 0 50px;
+    overflow-y: auto;
+    height: 100vh; 
 }
 
 .card{
     width: calc(100% / 7);
     position: relative;
+    margin-bottom: 10px;
 }
 
 .name-participant{
@@ -52,12 +56,17 @@ body{
     bottom: 5px;
 }
 
-
 /* regole comandi generali bottom */
 
 .bottom{
     height: 50px;
     background-color: rgb(19, 19, 19);
+    
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
 }
 
 .container-btm{
