@@ -1,6 +1,15 @@
 /* regole generali */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-
+.container{
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+}
 
 /* regole speaker view */
 
