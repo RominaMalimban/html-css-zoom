@@ -54,7 +54,42 @@ body{
 
 
 /* regole comandi generali bottom */
+
+.bottom{
+    height: 50px;
+    background-color: rgb(19, 19, 19);
+}
+
 .container-btm{
+    height: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.controls{
+    display: flex;
+}
+
+.controls-space{
+    padding: 0 5px;
+    display: inline-block;
+    text-align: center;
+}
+
+.arrow{
+    align-self: center;
+    font-size: 10px;
+}
+
+.green{
+    color: green;
+}
+
+.end-control{
+    height: 100%;
+    padding: 10px;
+    color: red;
+    background-color: rgb(57, 57, 57);
+    align-self: center;
 }
