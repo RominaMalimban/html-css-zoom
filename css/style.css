@@ -96,9 +96,10 @@ body{
 }
 
 .end-control{
+    display: block;
     height: 100%;
     padding: 10px;
     color: red;
     background-color: rgb(57, 57, 57);
-    align-self: center;
+    align-items: center;
 }
