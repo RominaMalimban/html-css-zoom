@@ -22,6 +22,7 @@ body{
     display: flex;
     justify-content: flex-end;
     padding: 50px 0;
+    height: 70px;
 }
 
 .gray-controls{
@@ -39,9 +40,9 @@ body{
 .participants{
     display: flex;
     flex-wrap: wrap;
-    margin: 0 50px;
+    margin: 0 50px 50px 50px;
     overflow-y: auto;
-    height: 100vh; 
+    height: calc(100% - 120px); 
 }
 
 .card{
@@ -61,7 +62,6 @@ body{
 .bottom{
     height: 50px;
     background-color: rgb(19, 19, 19);
-    
     position: fixed;
     bottom: 0;
     left: 0;
@@ -96,10 +96,9 @@ body{
 }
 
 .end-control{
-    display: block;
-    height: 100%;
-    padding: 10px;
+    height: 50px;
+    padding: 0 10px;
     color: red;
-    background-color: rgb(57, 57, 57);
-    align-items: center;
+    background-color: #393939;
+    line-height: 50px;
 }
